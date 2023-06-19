@@ -7,7 +7,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./notes.css";
 
-const Notes = ({ notes, markDone, setUpdateData, deleteTask }) => {
+const Notes = ({
+  notes,
+  markDone,
+  setUpdateData,
+  deleteTask,
+  selectedLabels,
+}) => {
   return (
     <>
       {notes &&
@@ -22,6 +28,18 @@ const Notes = ({ notes, markDone, setUpdateData, deleteTask }) => {
                     <span className="taskText" style={{ color: task.color }}>
                       {task.title}
                     </span>
+                    {/* <div className="selectedLabels">
+                      {task.label.map((label, labelIndex) => (
+                        <span
+                          key={labelIndex}
+                          className={`selectedLabel ${
+                            selectedLabels.includes(label) ? "active" : ""
+                          }`}
+                        >
+                          {label}
+                        </span>
+                      ))}
+                    </div> */}
                   </div>
                   <div className="iconsWrap">
                     <span
@@ -35,7 +53,6 @@ const Notes = ({ notes, markDone, setUpdateData, deleteTask }) => {
                         <FontAwesomeIcon icon={faPen} />
                       </span>
                     )}
-
                     <span title="Delete" onClick={() => deleteTask(task.id)}>
                       <FontAwesomeIcon icon={faTrashCan} />
                     </span>

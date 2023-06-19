@@ -1,5 +1,14 @@
 body {
-  background-color: #333;
+  background-color: #7b68ee;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(215, 177, 210, 1) 26%,
+    rgba(185, 195, 238, 0.6138830532212884) 49%,
+    rgba(170, 184, 225, 1) 76%,
+    rgba(148, 187, 233, 1) 100%
+  );
   color: #fff;
 }
 

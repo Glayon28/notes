@@ -1,6 +1,12 @@
 .taskBg {
   position: relative;
-  background-color: #555;
+  /* background: rgb(73, 21, 44);
+  background: radial-gradient(
+    circle,
+    rgba(73, 21, 44, 1) 0%,
+    rgba(34, 122, 226, 1) 100%
+  ); */
+  background-color: rgb(53, 30, 30);
   border-radius: 6px;
   margin-top: 20px;
   padding: 10px 140px 10px 15px;
