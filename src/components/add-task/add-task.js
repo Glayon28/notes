@@ -3,7 +3,6 @@ import "./add-task.css";
 const AddTaskForm = ({ newTask, setNewTask, addTask }) => {
   return (
     <>
-      {/* add task */}
       <div className="row">
         <div className="col">
           <input

@@ -8,7 +8,6 @@ const UpdateTaskForm = ({
 }) => {
   return (
     <>
-      {/* update task */}
       <div className="row">
         <div className="col">
           <input

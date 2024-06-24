@@ -28,18 +28,6 @@ const Notes = ({
                     <span className="taskText" style={{ color: task.color }}>
                       {task.title}
                     </span>
-                    {/* <div className="selectedLabels">
-                      {task.label.map((label, labelIndex) => (
-                        <span
-                          key={labelIndex}
-                          className={`selectedLabel ${
-                            selectedLabels.includes(label) ? "active" : ""
-                          }`}
-                        >
-                          {label}
-                        </span>
-                      ))}
-                    </div> */}
                   </div>
                   <div className="iconsWrap">
                     <span
